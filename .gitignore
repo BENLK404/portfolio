@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Env (ne jamais push les secrets)
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

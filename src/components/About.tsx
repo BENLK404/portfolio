@@ -40,9 +40,10 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.05 }}>
             <div className="photo-frame overflow-hidden" style={{ height: 320 }}>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop"
-                alt="Portrait"
+                src="/photo.jpg"
+                alt="Bernard Kokou Kpedzi"
                 className="w-full h-full object-cover object-top"
+                style={{ transform: 'scaleX(-1)' }}
               />
             </div>
           </motion.div>

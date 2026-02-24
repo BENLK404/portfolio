@@ -1,74 +1,50 @@
 # Portfolio — Bernard Kokou Kpedzi
 
-Portfolio personnel développé avec **React 18 + TypeScript + Vite**, bilingue FR/EN, thème clair/sombre.
+> Portfolio personnel fullstack — Frontend React + Backend Node.js
 
-## Stack
+[![web](https://img.shields.io/badge/branch-web-00cfe0?style=flat-square&logo=react)](https://github.com/BENLK404/portfolio/tree/web)
+[![backend](https://img.shields.io/badge/branch-backend-6db33f?style=flat-square&logo=nodedotjs)](https://github.com/BENLK404/portfolio/tree/backend)
 
-| Outil | Rôle |
-|-------|------|
-| React 18 + TypeScript | UI |
-| Vite | Build & Dev server |
-| Tailwind CSS | Styles utilitaires |
-| Framer Motion | Animations |
-| React Router DOM | Routing `/fr` `/en` |
-| React i18next | Internationalisation |
-| react-icons | Icônes de marque |
-| Lucide React | Icônes UI |
+---
 
-## Démarrage rapide
-
-```bash
-# 1. Installer les dépendances
-npm install
-
-# 2. Configurer l'API (optionnel si backend non lancé)
-cp .env.example .env
-# VITE_API_URL=http://localhost:5000
-
-# 3. Lancer en développement
-npm run dev
-
-# 4. Build production
-npm run build
-```
-
-## Structure
+## Structure du projet
 
 ```
-src/
-├── components/       # Hero, About, Services, Resume, Projects, Skills, Contact, Footer, Header
-├── data/
-│   └── portfolio.ts  # Toutes les données (expériences, projets, stack…)
-├── hooks/
-│   ├── useTheme.ts   # Gestion thème clair/sombre + localStorage
-│   └── useInView.ts  # Intersection Observer pour animations
-├── i18n/
-│   ├── index.ts      # Config i18next
-│   ├── fr.json       # Traductions françaises
-│   └── en.json       # Traductions anglaises
-└── App.tsx           # Routing /:lang
+portfolio/
+├── branch: web       → Frontend React 18 + TypeScript + Vite
+└── branch: backend   → API Node.js + Express + MongoDB
 ```
+
+## Branches
+
+| Branche | Description | Stack |
+|---------|-------------|-------|
+| [`web`](https://github.com/BENLK404/portfolio/tree/web) | Interface utilisateur bilingue FR/EN, thème clair/sombre | React · TypeScript · Vite · Tailwind · Framer Motion |
+| [`backend`](https://github.com/BENLK404/portfolio/tree/backend) | API REST — formulaire de contact, sauvegarde MongoDB, envoi email | Node.js · Express · MongoDB · Nodemailer |
 
 ## Fonctionnalités
 
-- **Bilingue** : `/fr` (français) et `/en` (anglais), langue du navigateur détectée automatiquement
+- **Bilingue** : `/fr` et `/en` avec détection automatique de la langue du navigateur
 - **Thème** : clair / sombre, persisté dans `localStorage`
-- **Sections** : Hero, À propos, Services, Expérience, Projets, Compétences, Contact
-- **Formulaire de contact** connecté au backend Node.js
-- **Bouton retour en haut** avec progression circulaire
-- **Design responsive** mobile / tablette / desktop
+- **Sections** : Hero, À propos, Services, Expérience, Projets, Stack technique, Contact
+- **Formulaire de contact** : messages sauvegardés en MongoDB + email automatique
+- **Sécurité backend** : rate-limiting, validation, CORS, Helmet
 
-## Variables d'environnement
-
-```env
-VITE_API_URL=http://localhost:5000   # URL du backend
-```
-
-## Déploiement
+## Démarrage
 
 ```bash
-npm run build
-# Le dossier dist/ est prêt pour Vercel, Netlify ou un VPS
+# Frontend
+git checkout web
+npm install && npm run dev
+
+# Backend (dans un second terminal)
+git checkout backend
+npm install && npm run dev
 ```
 
-> Pense à configurer `VITE_API_URL` avec l'URL de production du backend.
+> Consulter le `README.md` de chaque branche pour la configuration détaillée.
+
+## Auteur
+
+**Bernard Kokou Kpedzi** — Développeur Full-Stack  
+[GitHub](https://github.com/BENLK404) · [LinkedIn](https://www.linkedin.com/in/kokou-bernard-kpedzi-b47b2418a/) · [X](https://x.com/BLKB44058)

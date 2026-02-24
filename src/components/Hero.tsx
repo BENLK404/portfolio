@@ -4,6 +4,16 @@ import { Github, Linkedin, Twitter, ArrowRight, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { personalInfo } from '../data/portfolio';
 
+const FLAKES = Array.from({ length: 18 }, (_, i) => ({
+  id: i,
+  left: Math.random() * 100,
+  size: 18 + Math.random() * 26,
+  delay: Math.random() * 8,
+  duration: 6 + Math.random() * 8,
+  drift: (Math.random() - 0.5) * 120,
+  opacity: 0.15 + Math.random() * 0.45,
+}));
+
 export default function Hero() {
   const { t } = useTranslation();
   const ROLES = personalInfo.roles;
@@ -43,6 +53,38 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+
+      {/* Snowflakes */}
+      {FLAKES.map(f => (
+        <motion.span
+          key={f.id}
+          aria-hidden
+          style={{
+            position: 'absolute',
+            left: `${f.left}%`,
+            top: '-2rem',
+            fontSize: f.size,
+            color: 'var(--cyan)',
+            opacity: f.opacity,
+            pointerEvents: 'none',
+            userSelect: 'none',
+          }}
+          animate={{
+            y: ['0vh', '110vh'],
+            x: [0, f.drift],
+            rotate: [0, 360],
+            opacity: [f.opacity, f.opacity * 0.6, f.opacity],
+          }}
+          transition={{
+            duration: f.duration,
+            delay: f.delay,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+        >
+          ❄
+        </motion.span>
+      ))}
       <div className="w-full px-6 lg:px-16 pt-10 pb-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
 
@@ -131,8 +173,8 @@ export default function Hero() {
             {/* Photo frame */}
             <div className="photo-frame w-full overflow-hidden" style={{ height: 320 }}>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&fit=crop"
-                alt="Portrait"
+                src="/photo.jpg"
+                alt="Bernard Kokou Kpedzi"
                 className="w-full h-full object-cover object-top"
               />
             </div>

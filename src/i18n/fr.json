@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "resume": "Parcours",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available": "Disponible · Lomé, Togo",
+    "bio": "Développeur passionné par la création d'applications web et mobiles performantes. Je construis des expériences soignées, du front au back, avec rigueur et créativité.",
+    "cta_contact": "Me contacter",
+    "cta_projects": "Projets",
+    "stats": {
+      "projects": "Projets",
+      "experience": "Ans d'exp.",
+      "platforms": "Plateformes"
+    }
+  },
+  "about": {
+    "tag": "À propos",
+    "title": "Qui suis-je",
+    "bio1": "Développeur full-stack passionné par la conception de solutions complètes — du front-end au back-end, du web au mobile. Clean code et performance avant tout.",
+    "bio2": "Fort d'une expérience concrète à travers des stages, des missions freelance et des projets personnels, je livre des applications robustes sur web, mobile et desktop.",
+    "stats": {
+      "experience": "ans d'exp.",
+      "projects": "projets",
+      "clients": "clients"
+    },
+    "traits": ["Fast learner", "Autonome", "Agile / Scrum", "Clean Code", "SOLID"],
+    "links": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "X"
+    }
+  },
+  "services": {
+    "tag": "Services",
+    "title": "Ce que je fais",
+    "items": [
+      {
+        "title": "Développement Web",
+        "description": "Je crée des applications web avec une architecture robuste et une interface interactive et intuitive. Expert en frontend comme en backend pour des expériences performantes."
+      },
+      {
+        "title": "Développement Mobile",
+        "description": "Je développe des applications mobiles belles et fluides que vos utilisateurs adorent. Je travaille avec vous du début à la fin pour atteindre vos objectifs."
+      },
+      {
+        "title": "Développement Desktop",
+        "description": "Vous avez besoin d'une application desktop taillée sur mesure ? Je m'appuie sur un environnement puissant qui me permet de livrer rapidement et efficacement."
+      },
+      {
+        "title": "Backend & API",
+        "description": "Conception d'APIs REST sécurisées avec Spring Boot et Node.js. Architecture MVC, JWT, sécurisation et documentation complète pour des services fiables."
+      },
+      {
+        "title": "Base de données",
+        "description": "Conception et optimisation de bases de données SQL (PostgreSQL, MySQL) et NoSQL (MongoDB, Redis). Indexation, performance et intégrité des données."
+      },
+      {
+        "title": "Full-Stack & CI/CD",
+        "description": "Livraison de solutions complètes avec déploiement sur VPS Linux, Docker et pipelines GitHub Actions pour une mise en production sans friction."
+      }
+    ]
+  },
+  "resume": {
+    "tag": "Parcours",
+    "title": "Expérience"
+  },
+  "projects": {
+    "tag": "Projets",
+    "title": "Ce que j'ai construit",
+    "items": [
+      {
+        "name": "LKM Player – Lecteur Audio Local",
+        "type": "Projet open source",
+        "description": "Lecteur audio mobile Flutter 100 % local : scan de bibliothèque, playlists, paroles synchronisées (.lrc, tags, API), égaliseur, stats et suggestions. Zéro compte, zéro pub, zéro tracking.",
+        "highlights": ["Paroles synchronisées (3 sources)", "Lecture en arrière-plan", "Architecture Clean Feature-First", "Open source · MIT"]
+      },
+      {
+        "name": "MyRH – Gestion des Ressources Humaines",
+        "type": "Projet académique",
+        "description": "Application SPA de gestion RH avec génération de bulletins de paie et workflow de congés.",
+        "highlights": ["Cache Redis : +60% de performance", "Génération bulletins PDF", "Workflow congés complet"]
+      },
+      {
+        "name": "GestiSchool – Application Desktop",
+        "type": "Projet personnel",
+        "description": "Application cross-platform de gestion scolaire avec interface native pour Windows, macOS et Linux.",
+        "highlights": ["Cross-platform (Win/Mac/Linux)", "Interface native", "IPC & système de fichiers"]
+      },
+      {
+        "name": "Loky – Gestion Scolaire",
+        "type": "Projet DPSSE – Ministère",
+        "description": "Application desktop de gestion des établissements scolaires avec reporting statistique avancé.",
+        "highlights": ["Base de données centralisée", "Export PDF & Excel", "Architecture MVC + JPA"]
+      },
+      {
+        "name": "TaskFlow – Gestion de Tâches",
+        "type": "Projet académique",
+        "description": "Application full-stack de gestion de tâches avec drag & drop et notifications temps réel.",
+        "highlights": ["Drag & Drop", "Temps réel (WebSocket)", "Tests Jest & JUnit"]
+      },
+      {
+        "name": "Togoshop – E-Commerce",
+        "type": "Projet personnel",
+        "description": "Application e-commerce complète avec gestion des produits, panier et authentification JWT.",
+        "highlights": ["Auth JWT sécurisée", "Paiement simulé", "Lighthouse > 90"]
+      }
+    ]
+  },
+  "skills": {
+    "tag": "Compétences",
+    "title": "Stack technique",
+    "categories": ["Frontend", "Backend", "Bases de données & DevOps"]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Travaillons ensemble",
+    "available": "Disponible",
+    "subtitle": "Prêt à démarrer votre prochain projet ?",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Objet",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "name_placeholder": "Votre nom",
+      "email_placeholder": "votre@email.com",
+      "subject_placeholder": "Objet du message",
+      "message_placeholder": "Décrivez votre projet..."
+    }
+  },
+  "footer": {
+    "tagline": "Développeur Full-Stack · Lomé, Togo",
+    "rights": "Tous droits réservés"
+  },
+  "experiences": [
+    {
+      "title": "Développeur Full-Stack (Stage)",
+      "company": "PayTicket",
+      "subtitle": "Startup de billetterie numérique",
+      "period": "Janvier 2025 – Avril 2025",
+      "tasks": [
+        "Développement d'une application mobile de billetterie avec Flutter et Spring Boot",
+        "Conception et sécurisation d'une API REST avec Spring Security, JWT et validation des entrées",
+        "Intégration de paiements mobile money (Flooz, T-Money) et génération de QR codes uniques",
+        "Collaboration en équipe Agile (Scrum), revues de code et CI/CD via GitHub Actions",
+        "Rédaction de la documentation technique et des spécifications fonctionnelles"
+      ]
+    },
+    {
+      "title": "Développeur Logiciel (Stage)",
+      "company": "Ministère des Enseignements Primaire et Secondaire",
+      "subtitle": "DPSSE",
+      "period": "Juin 2024 – Novembre 2024",
+      "tasks": [
+        "Développement d'une application desktop de gestion scolaire avec JavaFX et Spring Boot",
+        "Conception d'une base de données PostgreSQL centralisant établissements, personnels et élèves",
+        "Implémentation de l'architecture MVC, Spring Data JPA et Hibernate",
+        "Intégration des exports PDF (iText) et Excel (Apache POI) pour les rapports statistiques",
+        "Participation aux réunions de cadrage fonctionnel avec les responsables pédagogiques"
+      ]
+    },
+    {
+      "title": "Développeur Frontend (Mission ponctuelle)",
+      "company": "Startup locale",
+      "subtitle": "Lomé",
+      "period": "Août 2024",
+      "tasks": [
+        "Refonte de l'interface utilisateur d'une application de gestion de stock",
+        "Migration de jQuery vers React, amélioration de l'expérience utilisateur",
+        "Livraison en 2 semaines avec tests et documentation"
+      ]
+    },
+    {
+      "title": "Développeur Web Junior (Freelance)",
+      "company": "Auto-entrepreneur",
+      "subtitle": "Clients privés",
+      "period": "2023 – 2025",
+      "tasks": [
+        "Création de sites vitrines et applications web sur mesure (React, Vue.js, Node.js)",
+        "Déploiement sur VPS Linux (Nginx, PM2) et configuration de noms de domaine",
+        "Optimisation SEO, performance (Lighthouse > 90) et accessibilité",
+        "Accompagnement des clients dans la maintenance et l'évolution de leurs solutions"
+      ]
+    }
+  ]
+}

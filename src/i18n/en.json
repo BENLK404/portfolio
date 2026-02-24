@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resume": "Resume",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available": "Available · Lomé, Togo",
+    "bio": "Passionate developer focused on building fast, elegant web and mobile applications. I craft thoughtful experiences from front to back, with precision and creativity.",
+    "cta_contact": "Get in touch",
+    "cta_projects": "Projects",
+    "stats": {
+      "projects": "Projects",
+      "experience": "Yrs exp.",
+      "platforms": "Platforms"
+    }
+  },
+  "about": {
+    "tag": "About",
+    "title": "Who am I",
+    "bio1": "Full-stack developer passionate about building complete solutions — from front-end to back-end, from web to mobile. Clean code and performance first.",
+    "bio2": "With concrete experience through internships, freelance missions and personal projects, I deliver robust applications across web, mobile and desktop.",
+    "stats": {
+      "experience": "yrs exp.",
+      "projects": "projects",
+      "clients": "clients"
+    },
+    "traits": ["Fast learner", "Autonomous", "Agile / Scrum", "Clean Code", "SOLID"],
+    "links": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "X"
+    }
+  },
+  "services": {
+    "tag": "Services",
+    "title": "What I do",
+    "items": [
+      {
+        "title": "Web Development",
+        "description": "I build web apps with a robust internal architecture and deliver an interactive and intuitive interface. Expert in both frontend and backend technologies."
+      },
+      {
+        "title": "Mobile Development",
+        "description": "I develop high quality, beautiful mobile apps your users will love. I work with you from start to finish to make sure your goals are reached."
+      },
+      {
+        "title": "Desktop Development",
+        "description": "You need desktop apps shaped just for your needs? I use a powerful environment that allows me to develop apps quickly and efficiently."
+      },
+      {
+        "title": "Backend & API",
+        "description": "Design of secure REST APIs with Spring Boot and Node.js. MVC architecture, JWT, security and complete documentation for reliable services."
+      },
+      {
+        "title": "Databases",
+        "description": "Design and optimization of SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis) databases. Indexing, performance and data integrity."
+      },
+      {
+        "title": "Full-Stack & CI/CD",
+        "description": "End-to-end delivery with deployment on Linux VPS, Docker and GitHub Actions pipelines for seamless production releases."
+      }
+    ]
+  },
+  "resume": {
+    "tag": "Resume",
+    "title": "Experience"
+  },
+  "projects": {
+    "tag": "Projects",
+    "title": "What I've built",
+    "items": [
+      {
+        "name": "LKM Player – Local Audio Player",
+        "type": "Open source project",
+        "description": "100% local Flutter mobile audio player: library scan, playlists, synced lyrics (.lrc, tags, API), equalizer, stats and suggestions. Zero account, zero ads, zero tracking.",
+        "highlights": ["Synced lyrics (3 sources)", "Background playback", "Clean Feature-First architecture", "Open source · MIT"]
+      },
+      {
+        "name": "MyRH – HR Management",
+        "type": "Academic project",
+        "description": "SPA HR management app with payslip generation and leave workflow.",
+        "highlights": ["Redis cache: +60% performance", "PDF payslip generation", "Full leave workflow"]
+      },
+      {
+        "name": "GestiSchool – Desktop App",
+        "type": "Personal project",
+        "description": "Cross-platform school management application with native interface for Windows, macOS and Linux.",
+        "highlights": ["Cross-platform (Win/Mac/Linux)", "Native interface", "IPC & file system"]
+      },
+      {
+        "name": "Loky – School Management",
+        "type": "DPSSE – Ministry project",
+        "description": "Desktop application for school administration with advanced statistical reporting.",
+        "highlights": ["Centralized database", "PDF & Excel export", "MVC + JPA architecture"]
+      },
+      {
+        "name": "TaskFlow – Task Management",
+        "type": "Academic project",
+        "description": "Full-stack task management application with drag & drop and real-time notifications.",
+        "highlights": ["Drag & Drop", "Real-time (WebSocket)", "Jest & JUnit tests"]
+      },
+      {
+        "name": "Togoshop – E-Commerce",
+        "type": "Personal project",
+        "description": "Full e-commerce application with product management, cart and JWT authentication.",
+        "highlights": ["Secure JWT auth", "Simulated payment", "Lighthouse > 90"]
+      }
+    ]
+  },
+  "skills": {
+    "tag": "Skills",
+    "title": "Tech Stack",
+    "categories": ["Frontend", "Backend", "Databases & DevOps"]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Let's work together",
+    "available": "Available",
+    "subtitle": "Ready to start your next project?",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "name_placeholder": "Your name",
+      "email_placeholder": "your@email.com",
+      "subject_placeholder": "Message subject",
+      "message_placeholder": "Describe your project..."
+    }
+  },
+  "footer": {
+    "tagline": "Full-Stack Developer · Lomé, Togo",
+    "rights": "All rights reserved"
+  },
+  "experiences": [
+    {
+      "title": "Full-Stack Developer (Internship)",
+      "company": "PayTicket",
+      "subtitle": "Digital ticketing startup",
+      "period": "January 2025 – April 2025",
+      "tasks": [
+        "Developed a mobile ticketing application with Flutter and Spring Boot",
+        "Designed and secured a REST API with Spring Security, JWT and input validation",
+        "Integrated mobile money payments (Flooz, T-Money) and unique QR code generation",
+        "Collaborated in an Agile team (Scrum), code reviews and CI/CD via GitHub Actions",
+        "Wrote technical documentation and functional specifications"
+      ]
+    },
+    {
+      "title": "Software Developer (Internship)",
+      "company": "Ministry of Primary and Secondary Education",
+      "subtitle": "DPSSE",
+      "period": "June 2024 – November 2024",
+      "tasks": [
+        "Developed a desktop school management application with JavaFX and Spring Boot",
+        "Designed a PostgreSQL database centralizing institutions, staff and students",
+        "Implemented MVC architecture, Spring Data JPA and Hibernate",
+        "Integrated PDF (iText) and Excel (Apache POI) exports for statistical reports",
+        "Participated in functional scoping meetings with academic administrators"
+      ]
+    },
+    {
+      "title": "Frontend Developer (Short mission)",
+      "company": "Local startup",
+      "subtitle": "Lomé",
+      "period": "August 2024",
+      "tasks": [
+        "Redesigned the user interface of an inventory management application",
+        "Migrated from jQuery to React, improving user experience",
+        "Delivered in 2 weeks with tests and documentation"
+      ]
+    },
+    {
+      "title": "Junior Web Developer (Freelance)",
+      "company": "Self-employed",
+      "subtitle": "Private clients",
+      "period": "2023 – 2025",
+      "tasks": [
+        "Built showcase websites and custom web applications (React, Vue.js, Node.js)",
+        "Deployed on Linux VPS (Nginx, PM2) and configured domain names",
+        "SEO optimization, performance (Lighthouse > 90) and accessibility",
+        "Supported clients with maintenance and evolution of their solutions"
+      ]
+    }
+  ]
+}

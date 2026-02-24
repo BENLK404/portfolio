@@ -15,6 +15,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 
 const SECTIONS = ['home', 'about', 'services', 'resume', 'projects', 'skills', 'contact'];
 type Lang = 'fr' | 'en';
@@ -83,6 +84,8 @@ function PortfolioPage() {
         <Contact />
         <Footer />
       </main>
+
+      <CookieConsent />
 
       <AnimatePresence>
         {showTop && (

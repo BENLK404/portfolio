@@ -9,6 +9,8 @@
     "contact": "Contact"
   },
   "hero": {
+    "greeting": "Salut, je suis",
+    "subtitle": "Développeur logiciel",
     "available": "Disponible · Lomé, Togo",
     "bio": "Développeur passionné par la création d'applications web et mobiles performantes. Je construis des expériences soignées, du front au back, avec rigueur et créativité.",
     "cta_contact": "Me contacter",
@@ -189,5 +191,17 @@
         "Accompagnement des clients dans la maintenance et l'évolution de leurs solutions"
       ]
     }
-  ]
+  ],
+  "cookies": {
+    "title": "Nous utilisons des cookies 🍪",
+    "description": "Ce site utilise des cookies pour améliorer votre expérience. En acceptant, vous consentez à leur utilisation conformément à notre politique de confidentialité.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "settings": "Personnaliser",
+    "necessary": "Cookies nécessaires",
+    "necessary_desc": "Indispensables au fonctionnement du site. Ne peuvent pas être désactivés.",
+    "analytics": "Cookies analytiques",
+    "analytics_desc": "Nous aident à comprendre comment vous utilisez le site (visites, pages vues).",
+    "save": "Enregistrer mes préférences"
+  }
 }

@@ -91,14 +91,20 @@ export default function Hero() {
           {/* LEFT */}
           <div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.1 }}>
+              <p className="text-sm font-medium mb-2" style={{ color: 'var(--cyan)' }}>
+                {t('hero.greeting')}
+              </p>
               <h1 className="font-bold leading-[1.05] tracking-tight mb-1"
                 style={{ fontSize: 'clamp(2rem, 5.5vw, 3.8rem)', color: 'var(--text)' }}>
                 Bernard Kokou
               </h1>
-              <h1 className="font-bold leading-[1.05] tracking-tight mb-6"
+              <h1 className="font-bold leading-[1.05] tracking-tight mb-2"
                 style={{ fontSize: 'clamp(2rem, 5.5vw, 3.8rem)', color: 'var(--hero-name-dim)' }}>
                 Kpedzi
               </h1>
+              <p className="text-base font-medium mb-5" style={{ color: 'var(--text-muted)' }}>
+                {t('hero.subtitle')}
+              </p>
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.28 }}

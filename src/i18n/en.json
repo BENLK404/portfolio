@@ -9,6 +9,8 @@
     "contact": "Contact"
   },
   "hero": {
+    "greeting": "Hi, I'm",
+    "subtitle": "Software developer",
     "available": "Available · Lomé, Togo",
     "bio": "Passionate developer focused on building fast, elegant web and mobile applications. I craft thoughtful experiences from front to back, with precision and creativity.",
     "cta_contact": "Get in touch",
@@ -189,5 +191,17 @@
         "Supported clients with maintenance and evolution of their solutions"
       ]
     }
-  ]
+  ],
+  "cookies": {
+    "title": "We use cookies 🍪",
+    "description": "This site uses cookies to improve your experience. By accepting, you consent to their use in accordance with our privacy policy.",
+    "accept": "Accept all",
+    "decline": "Decline",
+    "settings": "Customize",
+    "necessary": "Necessary cookies",
+    "necessary_desc": "Essential for the site to function. Cannot be disabled.",
+    "analytics": "Analytics cookies",
+    "analytics_desc": "Help us understand how you use the site (visits, page views).",
+    "save": "Save preferences"
+  }
 }

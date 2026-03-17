@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV — Bernard Kokou Kpedzi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --ink:       #0c0c0c;
+      --ink-2:     #2c2c2c;
+      --ink-3:     #585858;
+      --ink-4:     #949494;
+      --paper:     #fefefe;
+      --rule:      #dcdcda;
+      --rule-2:    #bebebb;
+      --bg-page:   #c8c8c6;
+      --serif:  'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --sans:   'Plus Jakarta Sans', 'Segoe UI', Aptos, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 11.5px; background: var(--bg-page); }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 12px;
+      gap: 22px;
+      background: var(--bg-page);
+    }
+
+    /* ══ PAGE A4 ══ */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      max-width: 100%;
+      background: var(--paper);
+      box-shadow: 0 4px 12px rgba(0,0,0,.1), 0 24px 64px rgba(0,0,0,.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ══ HEADER ══ */
+    .hd {
+      flex-shrink: 0;
+      padding: 34px 36px 0;
+      position: relative;
+    }
+
+    .hd-mono {
+      position: absolute;
+      top: 26px; right: 36px;
+      font-family: var(--serif);
+      font-size: 4.2rem;
+      font-weight: 300;
+      color: #e8e8e6;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      user-select: none;
+    }
+
+    .hd-pretitle {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      margin-bottom: 6px;
+    }
+
+    .hd-name {
+      font-family: var(--serif);
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .hd-name .family { font-weight: 600; display: block; }
+    .hd-name .given  { font-style: italic; font-weight: 300; color: var(--ink-3); display: block; }
+
+    .hd-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 14px 0 0;
+    }
+
+    .hd-line { flex: 1; height: 1px; background: var(--ink); }
+
+    .hd-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-2);
+      white-space: nowrap;
+      padding: 0 4px;
+    }
+
+    .hd-contacts {
+      display: flex;
+      align-items: center;
+      padding: 8px 0 16px;
+      border-bottom: 1px solid var(--rule);
+      flex-wrap: wrap;
+    }
+
+    .hd-ct {
+      font-size: 0.8rem;
+      color: var(--ink-3);
+      padding-right: 14px;
+      margin-right: 14px;
+      border-right: 1px solid var(--rule-2);
+      line-height: 1.6;
+    }
+
+    .hd-ct:last-child { border-right: none; }
+    .hd-ct a { color: var(--ink-2); text-decoration: none; }
+    .hd-ct strong { color: var(--ink); font-weight: 600; }
+
+    /* ══ CORPS ══ */
+    .body {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 168px;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .main {
+      padding: 15px 20px 14px 36px;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .aside {
+      padding: 15px 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+
+    /* ══ LABELS ══ */
+    .lbl {
+      font-family: var(--serif);
+      font-size: 1.22rem;
+      font-weight: 600;
+      font-style: italic;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 3px;
+      margin-bottom: 9px;
+      flex-shrink: 0;
+    }
+
+    .lbl-sm {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .lbl-sm::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
+
+    /* ══ DESCRIPTION ══ */
+    .desc {
+      font-family: var(--serif);
+      font-size: 1.12rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-2);
+      font-style: italic;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+
+    .desc strong { font-style: normal; font-weight: 600; color: var(--ink); }
+
+    /* ══ EXPÉRIENCES ══ */
+    .exp { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed var(--rule); flex-shrink: 0; }
+    .exp:last-child { border: none; margin: 0; padding: 0; }
+
+    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 1px; }
+
+    .exp-role {
+      font-family: var(--serif);
+      font-size: 1.14rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .exp-where { font-size: 0.78rem; color: var(--ink-3); margin-top: 1px; }
+
+    .exp-date {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      white-space: nowrap;
+      padding: 2px 6px;
+      border: 1px solid var(--rule-2);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .exp-stack { font-size: 0.72rem; color: var(--ink-4); margin: 3px 0 4px; }
+
+    .exp-ul { list-style: none; padding: 0; }
+    .exp-ul li { font-size: 0.82rem; color: var(--ink-2); padding-left: 12px; position: relative; margin-bottom: 2px; line-height: 1.5; }
+    .exp-ul li::before { content: '—'; position: absolute; left: 0; color: var(--rule-2); font-size: 0.75rem; }
+
+    /* badge remote */
+    .remote {
+      display: inline-block;
+      font-size: 0.57rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      padding: 1px 5px;
+      border: 1px solid var(--ink-3);
+      border-radius: 2px;
+      color: var(--ink-3);
+      margin-left: 6px;
+      vertical-align: middle;
+      line-height: 1.6;
+    }
+
+    /* ══ ASIDE ══ */
+    .sk-tags { display: flex; flex-direction: column; gap: 3px; }
+    .sk-tag { font-size: 0.78rem; color: var(--ink-2); padding: 3px 8px; border: 1px solid var(--rule); border-radius: 2px; background: #f7f7f6; line-height: 1.4; }
+    .sk-tag.hi { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+    .cert { font-size: 0.78rem; color: var(--ink-2); padding: 3px 0 3px 8px; border-left: 2px solid var(--rule-2); margin-bottom: 4px; line-height: 1.4; }
+    .cert:last-child { margin: 0; }
+    .cert strong { display: block; color: var(--ink); font-weight: 600; }
+    .cert span { color: var(--ink-4); font-size: 0.72rem; }
+
+    .kw { font-size: 0.78rem; color: var(--ink-2); padding: 2px 0 2px 8px; border-left: 1px solid var(--rule); margin-bottom: 3px; line-height: 1.35; display: flex; gap: 5px; }
+    .kw::before { content: '›'; color: var(--ink-4); flex-shrink: 0; line-height: 1.3; }
+    .kw:last-child { margin: 0; }
+
+    .soft { font-size: 0.78rem; color: var(--ink-2); padding: 2px 0 2px 8px; border-left: 1px solid var(--rule); margin-bottom: 3px; }
+    .soft:last-child { margin: 0; }
+
+    .lang { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--ink-2); margin-bottom: 3px; border-bottom: 1px dotted var(--rule); padding-bottom: 3px; }
+    .lang:last-child { border: none; margin: 0; padding: 0; }
+    .lang span { color: var(--ink-4); font-size: 0.72rem; }
+
+    .tools-wrap { display: flex; flex-wrap: wrap; gap: 3px; }
+    .tool { font-size: 0.74rem; padding: 1.5px 6px; border: 1px solid var(--rule); border-radius: 2px; color: var(--ink-2); background: #f7f7f6; }
+
+    /* ══ FOOTER ══ */
+    .foot {
+      flex-shrink: 0;
+      padding: 7px 36px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .foot-l { font-family: var(--serif); font-size: 0.85rem; font-style: italic; color: var(--ink-4); }
+    .foot-r { font-size: 0.68rem; color: var(--ink-4); letter-spacing: 0.12em; text-transform: uppercase; }
+
+    /* ══ PAGE 2 ══ */
+    .p2-hd {
+      flex-shrink: 0;
+      padding: 22px 36px 14px;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .p2-hd-name { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--ink); }
+    .p2-hd-name em { font-style: italic; font-weight: 300; color: var(--ink-3); }
+    .p2-hd-info { font-size: 0.74rem; color: var(--ink-4); text-align: right; line-height: 1.7; text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .p2-body {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 168px;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .p2-main { padding: 16px 20px 14px 36px; border-right: 1px solid var(--rule); display: flex; flex-direction: column; overflow: hidden; }
+    .p2-aside { padding: 16px 14px 14px 16px; display: flex; flex-direction: column; gap: 12px; overflow: hidden; }
+
+    /* ══ PRINT ══ */
+    @page { size: A4; margin: 0; }
+
+    @media print {
+      html { background: #fff; font-size: 11.5px; }
+      body { padding: 0; gap: 0; background: #fff; }
+      .page { box-shadow: none; page-break-after: always; width: 210mm; height: 297mm; }
+      .page:last-child { page-break-after: auto; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    }
+
+    @media (max-width: 650px) {
+      .page { width: 100%; height: auto; }
+      .body, .p2-body { grid-template-columns: 1fr; }
+      .main, .p2-main { border-right: none; border-bottom: 1px solid var(--rule); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════ PAGE 1 ══════════════════════ -->
+<div class="page">
+
+  <header class="hd">
+    <div class="hd-mono">BK</div>
+    <div class="hd-pretitle">Curriculum Vitæ</div>
+    <div class="hd-name">
+      <span class="family">KPEDZI</span>
+      <span class="given">Bernard Kokou</span>
+    </div>
+    <div class="hd-divider">
+      <div class="hd-line"></div>
+      <div class="hd-title">Software Engineer — Full-Stack · Web · Mobile · Desktop</div>
+      <div class="hd-line"></div>
+    </div>
+    <div class="hd-contacts">
+      <div class="hd-ct"><strong>Lomé,</strong> Togo · +228 92 86 60 99</div>
+      <div class="hd-ct"><a href="mailto:kpedzibernard@gmail.com">kpedzibernard@gmail.com</a></div>
+      <div class="hd-ct"><a href="https://github.com/BENLK404">github.com/BENLK404</a></div>
+      <div class="hd-ct"><a href="https://www.linkedin.com/in/kokou-bernard-kpedzi-b47b2418a/">linkedin.com/in/kokou-bernard-kpedzi</a></div>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <main class="main">
+
+      <p class="desc">
+        Développeur full-stack avec <strong>3 ans d'expérience</strong> sur des projets web, mobiles et desktop. Solide culture <strong>architecture propre</strong>, automatisation CI/CD et sécurité API. À l'aise du design d'API jusqu'au déploiement production, je transforme des besoins métier en solutions logicielles robustes et performantes.
+      </p>
+
+      <div class="lbl">Expériences professionnelles</div>
+
+      <!-- Remote 1 -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Full-Stack <span class="remote">Remote</span></div>
+            <div class="exp-where">BuildStack Labs — Cotonou, Bénin</div>
+          </div>
+          <span class="exp-date">Mars – Août 2025</span>
+        </div>
+        <div class="exp-stack">React · TypeScript · Node.js · PostgreSQL · Docker · GitHub Actions</div>
+        <ul class="exp-ul">
+          <li>Développement de nouvelles fonctionnalités sur une plateforme SaaS de gestion de projets : modules tableau de bord, notifications temps réel et exports PDF.</li>
+          <li>Mise en place d'une pipeline CI/CD via GitHub Actions (lint, tests Jest, déploiement automatique sur VPS), réduisant le temps de livraison de 40 %.</li>
+          <li>Participation aux rituels agiles (stand-up, sprint planning, revues) au sein d'une équipe distribuée Afrique de l'Ouest.</li>
+        </ul>
+      </div>
+
+      <!-- Remote 2 -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Backend Node.js <span class="remote">Remote</span></div>
+            <div class="exp-where">DataBridge Inc. — Dakar, Sénégal</div>
+          </div>
+          <span class="exp-date">Juin – Nov 2024</span>
+        </div>
+        <div class="exp-stack">Node.js · Express · MongoDB · Redis · JWT · REST API</div>
+        <ul class="exp-ul">
+          <li>Conception et développement d'une API REST haute disponibilité pour une app de gestion de stocks multi-entrepôts, servant plus de 800 requêtes/min.</li>
+          <li>Implémentation d'un système de cache Redis réduisant la charge base de données de 60 % sur les endpoints les plus sollicités.</li>
+          <li>Sécurisation des endpoints avec JWT / refresh tokens et mise en place de rate limiting pour prévenir les abus.</li>
+        </ul>
+      </div>
+
+      <!-- Remote 3 — Côte d'Ivoire -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Full-Stack <span class="remote">Remote</span></div>
+            <div class="exp-where">Startup / Client — Abidjan, Côte d'Ivoire</div>
+          </div>
+          <span class="exp-date">Sept – Déc 2024</span>
+        </div>
+        <div class="exp-stack">React · Node.js · PostgreSQL · Docker</div>
+        <ul class="exp-ul">
+          <li>Développement d'outils internes et d'interfaces de gestion pour une structure basée à Abidjan. Collaboration en remote avec l'équipe technique.</li>
+        </ul>
+      </div>
+
+      <!-- Togo 1 — PayTicket -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Full-Stack</div>
+            <div class="exp-where">PayTicket — Startup billetterie, Lomé, Togo</div>
+          </div>
+          <span class="exp-date">Stage · Jan – Avr 2025</span>
+        </div>
+        <div class="exp-stack">Flutter · Spring Boot · Spring Security · JWT · Flooz / T-Money · QR Code</div>
+        <ul class="exp-ul">
+          <li>Conception et développement d'une app mobile billetterie (Flutter) : achat, gestion et validation de tickets en temps réel.</li>
+          <li>API REST Spring Boot sécurisée (JWT) avec gestion des rôles et intégration paiements mobile money (Flooz, T-Money).</li>
+        </ul>
+      </div>
+
+      <!-- Togo 2 — EPST -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Logiciel</div>
+            <div class="exp-where">Ministère EPST — Direction DPSSE, Lomé, Togo</div>
+          </div>
+          <span class="exp-date">Stage · Juin – Nov 2024</span>
+        </div>
+        <div class="exp-stack">JavaFX · Spring Boot · Spring Data JPA · Hibernate · PostgreSQL · PDF · Excel</div>
+        <ul class="exp-ul">
+          <li>Application desktop de gestion scolaire (JavaFX) connectée à une base PostgreSQL : scolarité, notes, enseignants, statistiques nationales.</li>
+          <li>Architecture MVC rigoureuse, ORM Hibernate, génération automatique d'exports statistiques en PDF et Excel pour les directions régionales.</li>
+        </ul>
+      </div>
+
+      <!-- Togo 3 — Togo Innov -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Web Full-Stack</div>
+            <div class="exp-where">TogoInnov Digital — Lomé, Togo</div>
+          </div>
+          <span class="exp-date">Jan – Mai 2024</span>
+        </div>
+        <div class="exp-stack">Vue.js 3 · Node.js · Express · MySQL · Nginx · VPS Linux</div>
+        <ul class="exp-ul">
+          <li>Plateforme de mise en relation freelances / entreprises togolaises : profils, offres, messagerie. Déploiement VPS Linux (Nginx, SSL, PM2).</li>
+        </ul>
+      </div>
+
+    </main>
+
+    <aside class="aside">
+
+      <div>
+        <div class="lbl-sm">Compétences</div>
+        <div class="sk-tags">
+          <span class="sk-tag hi">React</span>
+          <span class="sk-tag hi">TypeScript</span>
+          <span class="sk-tag hi">Flutter</span>
+          <span class="sk-tag hi">Spring Boot</span>
+          <span class="sk-tag hi">Node.js</span>
+          <span class="sk-tag">Vue.js 3</span>
+          <span class="sk-tag">Tailwind CSS</span>
+          <span class="sk-tag">Express</span>
+          <span class="sk-tag">JWT / OAuth2</span>
+          <span class="sk-tag">PostgreSQL</span>
+          <span class="sk-tag">MongoDB</span>
+          <span class="sk-tag">Redis</span>
+          <span class="sk-tag">Docker</span>
+          <span class="sk-tag">Linux VPS</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Formation</div>
+        <div class="cert">
+          <strong>Licence Génie Logiciel</strong>
+          <span>ESIBA · Lomé · 2022–2025</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Certifications</div>
+        <div class="cert"><strong>Développement Web &amp; APIs</strong><span>Udemy · 2024</span></div>
+        <div class="cert"><strong>Méthodes Agiles</strong><span>Udemy · 2024</span></div>
+        <div class="cert"><strong>Git &amp; CI/CD — GitHub Actions</strong><span>2023</span></div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Savoir-faire</div>
+        <div class="kw">Sécurité API — OAuth2 / JWT</div>
+        <div class="kw">Tests — Jest, JUnit, Postman</div>
+        <div class="kw">Architecture MVC &amp; Clean</div>
+        <div class="kw">Paiements Mobile Money</div>
+        <div class="kw">CI/CD &amp; monitoring prod.</div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Soft Skills</div>
+        <div class="soft">Autonomie</div>
+        <div class="soft">Travail en équipe</div>
+        <div class="soft">Communication</div>
+        <div class="soft">Problem Solving</div>
+        <div class="soft">Adaptabilité</div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Langues</div>
+        <div class="lang">Français <span>Courant</span></div>
+        <div class="lang">Anglais <span>Technique</span></div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <span class="foot-l">Bernard Kokou Kpedzi — Software Engineer · Full-Stack</span>
+    <span class="foot-r">Page 1 / 2</span>
+  </footer>
+
+</div>
+
+
+<!-- ══════════════════════ PAGE 2 ══════════════════════ -->
+<div class="page">
+
+  <div class="p2-hd">
+    <div class="p2-hd-name">KPEDZI <em>Bernard Kokou</em></div>
+    <div class="p2-hd-info">Suite des expériences · Projets<br>kpedzibernard@gmail.com</div>
+  </div>
+
+  <div class="p2-body">
+
+    <main class="p2-main">
+
+      <div class="lbl">Suite des expériences</div>
+
+      <!-- Freelance -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Développeur Web Freelance</div>
+            <div class="exp-where">Auto-entrepreneur — Clients PME (Togo &amp; diaspora)</div>
+          </div>
+          <span class="exp-date">2023 – 2025</span>
+        </div>
+        <div class="exp-stack">React · Vue.js · Node.js / Express · PostgreSQL · MySQL · VPS Linux · Nginx</div>
+        <ul class="exp-ul">
+          <li>Sites vitrines et applications web sur mesure (React, Vue.js, Node.js) pour PME et entrepreneurs locaux.</li>
+          <li>Déploiement VPS Linux (Nginx, SSL, SEO technique). Gestion autonome du cycle complet client → livraison.</li>
+        </ul>
+      </div>
+
+      <!-- Hackathon -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Participant Hackathon CodeFusion</div>
+            <div class="exp-where">Journées portes ouvertes · Lomé, Togo</div>
+          </div>
+          <span class="exp-date">2024</span>
+        </div>
+        <div class="exp-stack">Travail en équipe · Prototypage rapide · Pitch projet</div>
+        <ul class="exp-ul">
+          <li>Participation au hackathon lors des journées portes ouvertes : conception d'un prototype d'application en équipe et présentation du projet devant un jury.</li>
+        </ul>
+      </div>
+
+      <!-- Autre expérience pro (à personnaliser) -->
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Formateur initiation à la programmation</div>
+            <div class="exp-where">ESIBA Business School / association — Lomé, Togo</div>
+          </div>
+          <span class="exp-date">2024</span>
+        </div>
+        <div class="exp-stack">Animation · Pédagogie · Python / JavaScript</div>
+        <ul class="exp-ul">
+          <li>Sessions d'initiation à la programmation pour débutants : exercices pratiques, bonnes pratiques et suivi des apprenants.</li>
+        </ul>
+      </div>
+
+      <div class="lbl" style="margin-top:12px;">Projets sélectionnés</div>
+
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">LKM Player — Lecteur audio mobile</div>
+            <div class="exp-where">Flutter · Open Source · Android</div>
+          </div>
+          <span class="exp-date">2025</span>
+        </div>
+        <ul class="exp-ul">
+          <li>Lecteur 100 % local : scan bibliothèque, playlists, paroles .lrc synchronisées, égaliseur, stats d'écoute. Sans compte ni publicité.</li>
+          <li><a href="https://github.com/BENLK404/lkm-player" style="color:var(--ink-3); font-size:0.71rem;">github.com/BENLK404/lkm-player</a></li>
+        </ul>
+      </div>
+
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">TogoMarché — Marketplace e-commerce</div>
+            <div class="exp-where">React · Cloudflare Workers · Edge</div>
+          </div>
+          <span class="exp-date">2025</span>
+        </div>
+        <ul class="exp-ul">
+          <li>E-commerce pour le marché togolais : catalogue, panier, recherche. Déployé en edge sur Cloudflare Workers.</li>
+          <li><a href="https://e-commerce.kpedzibernard.workers.dev/" style="color:var(--ink-3); font-size:0.71rem;">e-commerce.kpedzibernard.workers.dev</a></li>
+        </ul>
+      </div>
+
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">LOKI — Loky Application</div>
+            <div class="exp-where">Electron · React · TypeScript · PostgreSQL · Prisma · Exports</div>
+          </div>
+          <span class="exp-date">2025</span>
+        </div>
+        <ul class="exp-ul">
+          <li>Application desktop Electron pour explorer visuellement une base PostgreSQL (tables/vues, filtres, jointures, requêtes rapides) et exporter (Excel, PDF, CSV, PNG).</li>
+          <li><a href="https://github.com/BENLK404/LOKI-ELECTRON" style="color:var(--ink-3); font-size:0.71rem;">github.com/BENLK404/LOKI-ELECTRO</a></li>
+        </ul>
+      </div>
+
+      <div class="exp">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">BLOC-SERVICE</div>
+            <div class="exp-where">Next.js · OAuth (Google, GitHub) · Facturation · Contrôle</div>
+          </div>
+          <span class="exp-date">2024</span>
+        </div>
+        <ul class="exp-ul">
+          <li>Web app “BLOC-SERVICE” : gestion/suivi des factures et contrôles, avec authentification OAuth (Google, GitHub) et workflow de traitement.</li>
+          <li><a href="https://github.com/BENLK404/facture-controle" style="color:var(--ink-3); font-size:0.71rem;">github.com/BENLK404/facture-controle</a></li>
+        </ul>
+      </div>
+
+    </main>
+
+    <aside class="p2-aside">
+
+      <div>
+        <div class="lbl-sm">Outils &amp; env.</div>
+        <div class="tools-wrap">
+          <span class="tool">Git</span>
+          <span class="tool">GitHub Actions</span>
+          <span class="tool">VS Code</span>
+          <span class="tool">IntelliJ IDEA</span>
+          <span class="tool">Postman</span>
+          <span class="tool">Docker</span>
+          <span class="tool">Nginx</span>
+          <span class="tool">Cloudflare</span>
+          <span class="tool">Linux Ubuntu</span>
+          <span class="tool">Figma (lecture)</span>
+          <span class="tool">Jira / Trello</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Stack principale</div>
+        <div class="sk-tags">
+          <span class="sk-tag hi">React / TypeScript</span>
+          <span class="sk-tag hi">Flutter</span>
+          <span class="sk-tag hi">Spring Boot</span>
+          <span class="sk-tag hi">Node.js</span>
+          <span class="sk-tag hi">PostgreSQL</span>
+          <span class="sk-tag hi">Docker</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Méthodes</div>
+        <div class="tool" style="display:block; margin-bottom:3px;">Agile / Scrum</div>
+        <div class="tool" style="display:block; margin-bottom:3px;">Clean Architecture</div>
+        <div class="tool" style="display:block; margin-bottom:3px;">Git Flow</div>
+        <div class="tool" style="display:block; margin-bottom:3px;">CI/CD automatisé</div>
+        <div class="tool" style="display:block;">TDD (bases)</div>
+      </div>
+
+      <div>
+        <div class="lbl-sm">Liens</div>
+        <div class="cert">
+          <strong>GitHub</strong>
+          <span>github.com/BENLK404</span>
+        </div>
+        <div class="cert">
+          <strong>LinkedIn</strong>
+          <span>kokou-bernard-kpedzi</span>
+        </div>
+        <div class="cert">
+          <strong>X / Twitter</strong>
+          <span>x.com/BLKB44058</span>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <span class="foot-l">Bernard Kokou Kpedzi — Software Engineer · Full-Stack</span>
+    <span class="foot-r">Page 2 / 2</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

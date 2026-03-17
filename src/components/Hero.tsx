@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, ArrowRight, MapPin } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowRight, MapPin, Download } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { personalInfo } from '../data/portfolio';
 
@@ -150,6 +150,15 @@ export default function Hero() {
               >
                 {t('hero.cta_projects')}
               </button>
+              <a
+                href="../KPEDZI_KOKOU_BERNARD_SOFTWARE ENGINEER_CV_VERSION 2-1.pdf"
+                className="btn btn-ghost flex items-center gap-2"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download size={14} /> {t('hero.cta_cv')}
+              </a>
             </motion.div>
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.58 }}

@@ -15,6 +15,7 @@
     "bio": "Passionate developer focused on building fast, elegant web and mobile applications. I craft thoughtful experiences from front to back, with precision and creativity.",
     "cta_contact": "Get in touch",
     "cta_projects": "Projects",
+    "cta_cv": "Download CV",
     "stats": {
       "projects": "Projects",
       "experience": "Yrs exp.",
@@ -84,34 +85,22 @@
         "highlights": ["Synced lyrics (3 sources)", "Background playback", "Clean Feature-First architecture", "Open source · MIT"]
       },
       {
-        "name": "MyRH – HR Management",
-        "type": "Academic project",
-        "description": "SPA HR management app with payslip generation and leave workflow.",
-        "highlights": ["Redis cache: +60% performance", "PDF payslip generation", "Full leave workflow"]
+        "name": "TogoMarché — E-commerce marketplace",
+        "type": "Web project",
+        "description": "E-commerce marketplace: catalog, cart, search and modern UI. Edge deployment on Cloudflare Workers.",
+        "highlights": ["Edge deployment", "Modern UI", "Search & cart"]
       },
       {
-        "name": "GestiSchool – Desktop App",
-        "type": "Personal project",
-        "description": "Cross-platform school management application with native interface for Windows, macOS and Linux.",
-        "highlights": ["Cross-platform (Win/Mac/Linux)", "Native interface", "IPC & file system"]
+        "name": "LOKI — Loky Application",
+        "type": "Desktop application",
+        "description": "Electron desktop app to visually explore an existing PostgreSQL database (tables/views, filters, joins, quick queries) and export (Excel, PDF, CSV, PNG).",
+        "highlights": ["Advanced search", "Joins", "Exports (Excel/PDF/CSV/PNG)"]
       },
       {
-        "name": "Loky – School Management",
-        "type": "DPSSE – Ministry project",
-        "description": "Desktop application for school administration with advanced statistical reporting.",
-        "highlights": ["Centralized database", "PDF & Excel export", "MVC + JPA architecture"]
-      },
-      {
-        "name": "TaskFlow – Task Management",
-        "type": "Academic project",
-        "description": "Full-stack task management application with drag & drop and real-time notifications.",
-        "highlights": ["Drag & Drop", "Real-time (WebSocket)", "Jest & JUnit tests"]
-      },
-      {
-        "name": "Togoshop – E-Commerce",
-        "type": "Personal project",
-        "description": "Full e-commerce application with product management, cart and JWT authentication.",
-        "highlights": ["Secure JWT auth", "Simulated payment", "Lighthouse > 90"]
+        "name": "BLOC-SERVICE",
+        "type": "Web app",
+        "description": "Billing/control web app with OAuth authentication (Google, GitHub) and a simple processing workflow.",
+        "highlights": ["Google/GitHub OAuth", "Billing workflow", "Tracking & management"]
       }
     ]
   },
@@ -143,52 +132,86 @@
   },
   "experiences": [
     {
+      "title": "Full-Stack Developer (Remote)",
+      "company": "BuildStack Labs",
+      "subtitle": "Cotonou, Benin",
+      "period": "Mar – Aug 2025",
+      "tasks": [
+        "Built features on a SaaS platform (dashboard, notifications, exports).",
+        "CI/CD pipeline with GitHub Actions (lint, tests, deploy).",
+        "Worked with a distributed West Africa team."
+      ]
+    },
+    {
+      "title": "Backend Developer (Remote)",
+      "company": "DataBridge Inc.",
+      "subtitle": "Dakar, Senegal",
+      "period": "Jun – Nov 2024",
+      "tasks": [
+        "Designed and built REST APIs (Node.js/Express) with JWT authentication.",
+        "Improved performance with Redis caching on critical endpoints.",
+        "Implemented rate limiting and security hardening."
+      ]
+    },
+    {
+      "title": "Full-Stack Developer (Remote)",
+      "company": "Startup / Client",
+      "subtitle": "Abidjan, Côte d’Ivoire",
+      "period": "Sep – Dec 2024",
+      "tasks": [
+        "Built internal tools and admin interfaces.",
+        "Remote collaboration with the engineering team."
+      ]
+    },
+    {
       "title": "Full-Stack Developer (Internship)",
       "company": "PayTicket",
-      "subtitle": "Digital ticketing startup",
-      "period": "January 2025 – April 2025",
+      "subtitle": "Ticketing startup · Lomé, Togo",
+      "period": "Jan – Apr 2025",
       "tasks": [
-        "Developed a mobile ticketing application with Flutter and Spring Boot",
-        "Designed and secured a REST API with Spring Security, JWT and input validation",
-        "Integrated mobile money payments (Flooz, T-Money) and unique QR code generation",
-        "Collaborated in an Agile team (Scrum), code reviews and CI/CD via GitHub Actions",
-        "Wrote technical documentation and functional specifications"
+        "Built a Flutter ticketing app (purchase, management, validation).",
+        "Secured Spring Boot API (Spring Security, JWT).",
+        "Integrated Flooz/T‑Money payments and QR codes."
       ]
     },
     {
       "title": "Software Developer (Internship)",
-      "company": "Ministry of Primary and Secondary Education",
-      "subtitle": "DPSSE",
-      "period": "June 2024 – November 2024",
+      "company": "Ministry EPST",
+      "subtitle": "DPSSE · Lomé, Togo",
+      "period": "Jun – Nov 2024",
       "tasks": [
-        "Developed a desktop school management application with JavaFX and Spring Boot",
-        "Designed a PostgreSQL database centralizing institutions, staff and students",
-        "Implemented MVC architecture, Spring Data JPA and Hibernate",
-        "Integrated PDF (iText) and Excel (Apache POI) exports for statistical reports",
-        "Participated in functional scoping meetings with academic administrators"
+        "JavaFX desktop app connected to PostgreSQL.",
+        "MVC architecture, Spring Data JPA / Hibernate.",
+        "Automated PDF and Excel statistical exports."
       ]
     },
     {
-      "title": "Frontend Developer (Short mission)",
-      "company": "Local startup",
-      "subtitle": "Lomé",
-      "period": "August 2024",
+      "title": "Full-Stack Web Developer",
+      "company": "TogoInnov Digital",
+      "subtitle": "Lomé, Togo",
+      "period": "Jan – May 2024",
       "tasks": [
-        "Redesigned the user interface of an inventory management application",
-        "Migrated from jQuery to React, improving user experience",
-        "Delivered in 2 weeks with tests and documentation"
+        "Freelancers/companies platform: profiles, jobs, messaging.",
+        "Linux VPS deployment (Nginx, SSL, PM2)."
       ]
     },
     {
-      "title": "Junior Web Developer (Freelance)",
+      "title": "Freelance Web Developer",
       "company": "Self-employed",
-      "subtitle": "Private clients",
+      "subtitle": "SME clients (Togo & diaspora)",
       "period": "2023 – 2025",
       "tasks": [
-        "Built showcase websites and custom web applications (React, Vue.js, Node.js)",
-        "Deployed on Linux VPS (Nginx, PM2) and configured domain names",
-        "SEO optimization, performance (Lighthouse > 90) and accessibility",
-        "Supported clients with maintenance and evolution of their solutions"
+        "Custom websites and web apps (React, Vue.js, Node.js).",
+        "Linux VPS deployment (Nginx, SSL) and technical SEO."
+      ]
+    },
+    {
+      "title": "Intro to Programming Trainer",
+      "company": "ESIBA Business School / association",
+      "subtitle": "Lomé, Togo",
+      "period": "2024",
+      "tasks": [
+        "Delivered beginner sessions: exercises, best practices, mentoring."
       ]
     }
   ],

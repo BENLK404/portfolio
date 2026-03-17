@@ -15,6 +15,7 @@
     "bio": "Développeur passionné par la création d'applications web et mobiles performantes. Je construis des expériences soignées, du front au back, avec rigueur et créativité.",
     "cta_contact": "Me contacter",
     "cta_projects": "Projets",
+    "cta_cv": "Télécharger le CV",
     "stats": {
       "projects": "Projets",
       "experience": "Ans d'exp.",
@@ -84,34 +85,22 @@
         "highlights": ["Paroles synchronisées (3 sources)", "Lecture en arrière-plan", "Architecture Clean Feature-First", "Open source · MIT"]
       },
       {
-        "name": "MyRH – Gestion des Ressources Humaines",
-        "type": "Projet académique",
-        "description": "Application SPA de gestion RH avec génération de bulletins de paie et workflow de congés.",
-        "highlights": ["Cache Redis : +60% de performance", "Génération bulletins PDF", "Workflow congés complet"]
+        "name": "TogoMarché — Marketplace e-commerce",
+        "type": "Projet web",
+        "description": "Marketplace e-commerce : catalogue, panier, recherche et interface moderne. Déploiement edge sur Cloudflare Workers.",
+        "highlights": ["Déploiement edge", "Interface moderne", "Recherche & panier"]
       },
       {
-        "name": "GestiSchool – Application Desktop",
-        "type": "Projet personnel",
-        "description": "Application cross-platform de gestion scolaire avec interface native pour Windows, macOS et Linux.",
-        "highlights": ["Cross-platform (Win/Mac/Linux)", "Interface native", "IPC & système de fichiers"]
+        "name": "LOKI — Loky Application",
+        "type": "Application desktop",
+        "description": "Application desktop Electron pour explorer visuellement une base PostgreSQL (tables/vues, filtres, jointures, requêtes rapides) et exporter (Excel, PDF, CSV, PNG).",
+        "highlights": ["Recherche avancée", "Jointures", "Exports (Excel/PDF/CSV/PNG)"]
       },
       {
-        "name": "Loky – Gestion Scolaire",
-        "type": "Projet DPSSE – Ministère",
-        "description": "Application desktop de gestion des établissements scolaires avec reporting statistique avancé.",
-        "highlights": ["Base de données centralisée", "Export PDF & Excel", "Architecture MVC + JPA"]
-      },
-      {
-        "name": "TaskFlow – Gestion de Tâches",
-        "type": "Projet académique",
-        "description": "Application full-stack de gestion de tâches avec drag & drop et notifications temps réel.",
-        "highlights": ["Drag & Drop", "Temps réel (WebSocket)", "Tests Jest & JUnit"]
-      },
-      {
-        "name": "Togoshop – E-Commerce",
-        "type": "Projet personnel",
-        "description": "Application e-commerce complète avec gestion des produits, panier et authentification JWT.",
-        "highlights": ["Auth JWT sécurisée", "Paiement simulé", "Lighthouse > 90"]
+        "name": "BLOC-SERVICE",
+        "type": "Web app",
+        "description": "Web app de facturation/contrôle avec authentification OAuth (Google, GitHub) et workflow de traitement.",
+        "highlights": ["OAuth Google/GitHub", "Workflow facturation", "Gestion & suivi"]
       }
     ]
   },
@@ -143,52 +132,86 @@
   },
   "experiences": [
     {
+      "title": "Développeur Full-Stack (Remote)",
+      "company": "BuildStack Labs",
+      "subtitle": "Cotonou, Bénin",
+      "period": "Mars – Août 2025",
+      "tasks": [
+        "Développement de fonctionnalités sur une plateforme SaaS (dashboard, notifications, exports).",
+        "Pipeline CI/CD via GitHub Actions (lint, tests, déploiement).",
+        "Collaboration en équipe distribuée (Afrique de l'Ouest)."
+      ]
+    },
+    {
+      "title": "Développeur Backend Node.js (Remote)",
+      "company": "DataBridge Inc.",
+      "subtitle": "Dakar, Sénégal",
+      "period": "Juin – Nov 2024",
+      "tasks": [
+        "Conception et développement d'API REST (Node.js/Express) avec authentification JWT.",
+        "Optimisation des performances via cache Redis sur endpoints critiques.",
+        "Mise en place de rate limiting et durcissement sécurité."
+      ]
+    },
+    {
+      "title": "Développeur Full-Stack (Remote)",
+      "company": "Startup / Client",
+      "subtitle": "Abidjan, Côte d'Ivoire",
+      "period": "Sept – Déc 2024",
+      "tasks": [
+        "Développement d'outils internes et d'interfaces de gestion.",
+        "Collaboration à distance avec l'équipe technique."
+      ]
+    },
+    {
       "title": "Développeur Full-Stack (Stage)",
       "company": "PayTicket",
-      "subtitle": "Startup de billetterie numérique",
+      "subtitle": "Startup billetterie · Lomé, Togo",
       "period": "Janvier 2025 – Avril 2025",
       "tasks": [
-        "Développement d'une application mobile de billetterie avec Flutter et Spring Boot",
-        "Conception et sécurisation d'une API REST avec Spring Security, JWT et validation des entrées",
-        "Intégration de paiements mobile money (Flooz, T-Money) et génération de QR codes uniques",
-        "Collaboration en équipe Agile (Scrum), revues de code et CI/CD via GitHub Actions",
-        "Rédaction de la documentation technique et des spécifications fonctionnelles"
+        "Conception et développement d'une app mobile billetterie (Flutter).",
+        "API Spring Boot sécurisée (Spring Security, JWT).",
+        "Intégration paiements Flooz/T‑Money et QR codes."
       ]
     },
     {
       "title": "Développeur Logiciel (Stage)",
-      "company": "Ministère des Enseignements Primaire et Secondaire",
-      "subtitle": "DPSSE",
-      "period": "Juin 2024 – Novembre 2024",
+      "company": "Ministère EPST",
+      "subtitle": "DPSSE · Lomé, Togo",
+      "period": "Juin – Nov 2024",
       "tasks": [
-        "Développement d'une application desktop de gestion scolaire avec JavaFX et Spring Boot",
-        "Conception d'une base de données PostgreSQL centralisant établissements, personnels et élèves",
-        "Implémentation de l'architecture MVC, Spring Data JPA et Hibernate",
-        "Intégration des exports PDF (iText) et Excel (Apache POI) pour les rapports statistiques",
-        "Participation aux réunions de cadrage fonctionnel avec les responsables pédagogiques"
+        "Application desktop JavaFX connectée à PostgreSQL.",
+        "Architecture MVC, Spring Data JPA / Hibernate.",
+        "Exports statistiques PDF et Excel."
       ]
     },
     {
-      "title": "Développeur Frontend (Mission ponctuelle)",
-      "company": "Startup locale",
-      "subtitle": "Lomé",
-      "period": "Août 2024",
+      "title": "Développeur Web Full-Stack",
+      "company": "TogoInnov Digital",
+      "subtitle": "Lomé, Togo",
+      "period": "Jan – Mai 2024",
       "tasks": [
-        "Refonte de l'interface utilisateur d'une application de gestion de stock",
-        "Migration de jQuery vers React, amélioration de l'expérience utilisateur",
-        "Livraison en 2 semaines avec tests et documentation"
+        "Plateforme freelances/entreprises : profils, offres, messagerie.",
+        "Déploiement VPS Linux (Nginx, SSL, PM2)."
       ]
     },
     {
-      "title": "Développeur Web Junior (Freelance)",
+      "title": "Développeur Web Freelance",
       "company": "Auto-entrepreneur",
-      "subtitle": "Clients privés",
+      "subtitle": "Clients PME (Togo & diaspora)",
       "period": "2023 – 2025",
       "tasks": [
-        "Création de sites vitrines et applications web sur mesure (React, Vue.js, Node.js)",
-        "Déploiement sur VPS Linux (Nginx, PM2) et configuration de noms de domaine",
-        "Optimisation SEO, performance (Lighthouse > 90) et accessibilité",
-        "Accompagnement des clients dans la maintenance et l'évolution de leurs solutions"
+        "Sites vitrines et applications web sur mesure (React, Vue.js, Node.js).",
+        "Déploiement VPS Linux (Nginx, SSL), SEO technique."
+      ]
+    },
+    {
+      "title": "Formateur initiation à la programmation",
+      "company": "ESIBA Business School / association",
+      "subtitle": "Lomé, Togo",
+      "period": "2024",
+      "tasks": [
+        "Sessions d'initiation : exercices pratiques, bonnes pratiques, suivi."
       ]
     }
   ],
